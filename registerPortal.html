@@ -14,6 +14,11 @@
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <style>
+    #dataTable{
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
     <section class="menu cid-ro0q7j30xb" once="menu" id="menu1-0">
@@ -87,19 +92,73 @@
     </div>
 
 </section>
-<section class="mbr-section" id="firebase-admin-block-9" data-rv-view="38" style="background-color: rgb(255, 255, 255); padding-top: 9rem; padding-bottom: 9rem;">
+<section class="mbr-section" id="firebase-admin-block-9" style="background-color: rgb(255, 255, 255); padding-top: 2rem; padding-bottom: 9rem;">
   <div class="container" id="login-form">
-    <h2 class="form-signin-heading">Register Below:</h2>
-    <form class="form-signin">
-      <label for="inputEmail" class="sr-only">Email address</label>
-      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="">
-      <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-      <span id="admin-login-error-block" class="help-block" style="display:none">Password error</span>
+    <center><h2 class="form-signin-heading"><u>Yojana Access Registration Form</u></h2>
+    <form class="form-signin" style="margin-top: 20px">
+      <table>
+        <tr>
+          <td id="dataTable">Village/गाँव:</td>
+          <td id="dataTable">
+            <input type="text" id="villageName" required>
+          </td>
+          <td id="dataTable">Gram Panchayat/ग्राम पंचायत:</td>
+          <td id="dataTable">
+              <input type="text" id="gramName" required>
+          </td>
+        </tr>
 
-      <button class="btn btn-primary" type="submit">Register Yourself</button>
+        <tr>
+            <td id="dataTable">Ward No./वार्ड नं:</td>
+            <td id="dataTable">
+              <input type="number" id="wardNo" required>
+            </td>
+            <td id="dataTable">Block/खंड:</td>
+            <td id="dataTable">
+                <input type="text" id="blockName" required>
+            </td>
+          </tr>
+
+          <tr>
+              <td id="dataTable">District/जिला:</td>
+              <td id="dataTable">
+                <input type="text" id="districtName" required>
+              </td>
+              <td id="dataTable">State/राज्य:</td>
+              <td id="dataTable">
+                  <input type="text" id="stateName" required>
+              </td>
+            </tr>
+
+            <tr>
+              <td id="dataTable">1. Respondent's Profile/उत्तरदाता की प्रोफ़ाइल:</td>
+            </tr>
+            
+            <tr>
+              <table border="1">
+                <tr>
+                  <td id=dataTable>Name/नाम: <input type="text" id="userName" required></td>
+                  <td id=dataTable>Gender/लिंग:
+                    <select id="userGender">
+                      <optgroup>
+                        <option>Male/पुरुष</option>
+                        <option>Female/महिला</option>
+                        <option>Others/अन्य</option>
+                      </optgroup>
+                    </select>
+                  </td>
+                  <td id=dataTable>Age/आयु (Yrs): <input type="number" id="userAge" required></td>
+                </tr>
+
+                <tr>
+                    <td id=dataTable>Relationship with Head of House/घर के मुखिया के साथ संबंध: <input type="text" id="userRelationHead" required></td>
+                    <td id=dataTable>Contact Number/संपर्क संख्या: <input type="phone" id="userContact" required></td>
+                  </tr>
+              </table>
+            </tr>
+      </table>
     </form>
-
+    </center>
   </div>
   <div class="container" id="login-panel" style="display: none">
     <ul class="nav nav-tabs" role="tablist" id="menu-tabs">
